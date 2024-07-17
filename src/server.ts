@@ -1,6 +1,15 @@
-interface Person {
-  name: String;
-  age: Number;
-}
+import fastify from "fastify";
 
-console.log("Hello World!");
+const app = fastify();
+
+app.get("/", () => {
+  return "Hello NLW Unite";
+});
+
+app.get("/test", () => {
+  return "Hello Test";
+});
+
+app.listen({ port: 3333 }).then(() => {
+  console.log("HTTP server running");
+});
