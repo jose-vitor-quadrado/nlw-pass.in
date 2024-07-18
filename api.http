@@ -2,7 +2,17 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details": "An event for those passionate about programming.",
-  "maximumAttendess": 100
+  "title": "Novo Evento 2",
+  "details": null,
+  "maximumAttendess": 1
+}
+
+###
+
+POST http://localhost:3333/events/725ecc13-c3ea-43b5-b24b-fad5a66ce2d3/attendees
+Content-Type: application/json
+
+{
+  "name": "Anderson Silva",
+  "email": "spidergames2@contato.com"
 }
