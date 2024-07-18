@@ -7,8 +7,12 @@ export function generateSlug(text: String) {
       .replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
       // replace all characters that are not letters, spaces or hyphens
-      .replace(/[\^\w\s-]/g, "")
+      .replace(/[^a-z0-9\s-]/g, "")
+      // remove spaces from start and end
+      .trim()
       // remove all the blank spaces then replaces with "-"
       .replace(/\s+/g, "-")
+      // remove multiple hyphens
+      .replace(/-+/g, "-")
   );
 }
