@@ -1,9 +1,9 @@
 # pass.in
 
-O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**.
+pass.in is an application for **managing participants at in-person events**.
 
-A ferramenta permite que o organizador cadastre um evento e abra uma página pública de inscrição.
+The tool allows the organizer to register an event and open a public registration page.
 
-Os participantes inscritos podem emitir uma credencial para check-in no dia do evento.
+Registered participants can issue a credential for check-in on the event day.
 
-O sistema fará um scan da credencial do participante para permitir a entrada no evento.
+The system will scan the participant's credential to allow entry to the event.
